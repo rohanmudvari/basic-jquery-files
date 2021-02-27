@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#header{
+			background-color: yellow;
+			padding: 10px;
+			height: 100px;
+			width: 100px;
+			float: left;
+		}
+		#header:hover{
+			background-color: green;
+			color: white;
+			cursor: pointer;
+		}
+		#content{
+			background-color:gray;
+			padding: 10px;
+			height: 100px;
+			width: 800px;
+		   float: left;	
+		}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+      $("#header").click(function(){
+      $("#content").slideToggle(1000);
+      });
+	});
+</script>
+</head>
+<body>
+<div id="header">Click to see more</div>
+<div id="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+</body>
+</html>

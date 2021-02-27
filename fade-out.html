@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		div{
+		 background-color:green;
+		 height: 100px;
+		 width: 100px;
+
+		}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+        $("button").click(function(){
+          $("#div1").fadeOut(5000);
+          $("#div2").fadeOut(4000);
+          $("#div3").fadeOut(2000);
+          $("#div4").fadeOut();
+        });
+		});
+	</script>
+</head>
+<body>
+	<button>Click</button><br><br>
+<div id="div1"></div><br>
+<div id="div2"></div><br>
+<div id="div3"></div><br>
+<div id="div4"></div>
+</body>
+</html>
